@@ -1,5 +1,8 @@
-import { join } from "node:path";
 import { readFile } from "node:fs/promises";
+
+const join = (...segments) => {
+  return segments.join("/").replace(/[\/]+/g, "/");
+};
 
 export const config = async ({ cwd, development }) => {
   try {
@@ -15,7 +18,7 @@ export const config = async ({ cwd, development }) => {
           format: String,
           default: development
             ? "/static"
-            : join(eik.server, "pkg", eik.name, eik.version),
+            : new URL(join("pkg", eik.name, eik.version), eik.server).href,
         },
       },
     };
