@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/podium-lib/eik-podlet-server-extension/compare/v1.0.1...v1.0.2) (2023-06-30)
+
+
+### Bug Fixes
+
+* run prepublish before releasing to make sure types are uploaded ([a489752](https://github.com/podium-lib/eik-podlet-server-extension/commit/a48975258c7a602a45c98ff7a16398a38f713e13))
+
 ## [1.0.1](https://github.com/podium-lib/eik-podlet-server-extension/compare/v1.0.0...v1.0.1) (2023-06-30)
 
 
