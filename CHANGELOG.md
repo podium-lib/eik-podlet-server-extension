@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/podium-lib/eik-podlet-server-extension/compare/v1.0.2...v1.0.3) (2023-06-30)
+
+
+### Bug Fixes
+
+* add files entry in package.json to see if types are picked up then ([f7592a9](https://github.com/podium-lib/eik-podlet-server-extension/commit/f7592a93a9b8ea931d2f12f6a1f684948fa8c37c))
+
 ## [1.0.2](https://github.com/podium-lib/eik-podlet-server-extension/compare/v1.0.1...v1.0.2) (2023-06-30)
 
 
