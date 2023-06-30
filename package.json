@@ -1,13 +1,21 @@
 {
-  "name": "eik-podlet-server-extension",
+  "name": "@podium/eik-podlet-server-extension",
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
+  "types": "index.d.ts",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "prepublish": "tsc"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/node": "^20.3.2",
+    "typescript": "^5.1.6"
+  }
 }
