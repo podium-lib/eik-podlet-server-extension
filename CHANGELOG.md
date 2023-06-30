@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/podium-lib/eik-podlet-server-extension/compare/v1.0.0...v1.0.1) (2023-06-30)
+
+
+### Bug Fixes
+
+* change publish-config to public ([957d6eb](https://github.com/podium-lib/eik-podlet-server-extension/commit/957d6ebd67a27f24c7f7a30af9a021a9b1a12f29))
+
 # 1.0.0 (2023-06-30)
 
 
