@@ -16,14 +16,7 @@ const join = (...segments) => {
  * @param {Object} options - The options object.
  * @param {string} options.cwd - The current working directory.
  * @param {boolean} options.development - Whether the server is running in development mode.
- * @returns {Promise<{
- *   assets: {
- *     base: {
- *       format: string;
- *       default: string;
- *     };
- *   };
- * }>} The configuration object.
+ * @returns {Promise<Object>} The configuration object.
  * @throws {Error} If the eik.json file cannot be read.
  */
 export const config = async ({ cwd, development }) => {
@@ -37,7 +30,7 @@ export const config = async ({ cwd, development }) => {
     return {
       assets: {
         base: {
-          format: "string",
+          format: String,
           default: development
             ? "/static"
             : new URL(join("pkg", eik.name, eik.version), eik.server).href,
