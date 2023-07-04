@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/podium-lib/eik-podlet-server-extension/compare/v1.0.3...v1.0.4) (2023-07-04)
+
+
+### Bug Fixes
+
+* make sure config is valid ([ec7ca51](https://github.com/podium-lib/eik-podlet-server-extension/commit/ec7ca51f26f92b6d4f79d01dd7ac3d90e8ed9ecc))
+
 ## [1.0.3](https://github.com/podium-lib/eik-podlet-server-extension/compare/v1.0.2...v1.0.3) (2023-06-30)
 
 
