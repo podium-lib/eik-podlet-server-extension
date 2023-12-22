@@ -15,7 +15,7 @@ const join = (...segments) => {
  *
  * @param {Object} options - The options object.
  * @param {string} options.cwd - The current working directory.
- * @param {boolean} options.development - Whether the server is running in development mode.
+ * @param {boolean} [options.development] - Whether the server is running in development mode.
  * @returns {Promise<Object>} The configuration object.
  * @throws {Error} If the eik.json file cannot be read.
  */
@@ -27,11 +27,16 @@ export const config = async ({ cwd, development }) => {
       })
     );
 
+    let useLocalFiles = development;
+    if (process.env.EIK_DEVELOPMENT === "true") {
+      useLocalFiles = true;
+    }
+
     return {
       assets: {
         base: {
           format: String,
-          default: development
+          default: useLocalFiles
             ? "/static"
             : new URL(join("pkg", eik.name, eik.version), eik.server).href,
         },

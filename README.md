@@ -25,3 +25,12 @@ npm i @podium/eik-podlet-server-extension
   // ...
 }
 ```
+
+## Debug `podlet build`
+
+If you want to use the local files also outside development, for local debugging, run:
+
+```
+podlet build
+EIK_DEVELOPMENT=true podlet start
+```
